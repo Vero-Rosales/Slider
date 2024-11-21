@@ -1,9 +1,39 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+/* Estilo para los sliders */
+input[type="range"] {
+  -webkit-appearance: none; /* Eliminar estilo predeterminado */
+  width: 150px; /* Ancho del slider */
+  height: 8px; /* Altura del track */
+  background: linear-gradient(to right, #32cd32, #ffff00); /* Color del track */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Sin borde al enfocar */
 }
 
-canvas {
-  display: block;
+/* Estilo para el thumb en navegadores WebKit (Chrome, Safari, Edge) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Eliminar estilo predeterminado */
+  width: 16px; /* Tamaño del thumb */
+  height: 16px;
+  background: #008000; /* Color verde del thumb */
+  border-radius: 50%; /* Forma circular */
+  cursor: pointer; /* Cambiar el cursor */
+}
+
+/* Estilo para el thumb en Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #008000; /* Color verde del thumb */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Estilo para el thumb en IE/Edge */
+input[type="range"]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  background: #008000; /* Color verde del thumb */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
